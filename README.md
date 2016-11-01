@@ -7,6 +7,12 @@ It's written in c++11.
 
 ## Example
 
+```c++
+Ini::Reader reader;
+if (reader.readIniFile("config.ini"))
+reader.get<std::string>("section","key","defaultValue");
+```
+
 ## How to use it?
 Copy `src/Ini.*` to your project.
 
